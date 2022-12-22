@@ -1,15 +1,15 @@
-name:Test-Project
+name:testproject
 on:push
 jobs:
-  test-project:
+  testproject:
     name: Test code base
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Run Test-Project
-        uses: github/test-project@v3
+      - name: Run testproject
+        uses: github/testprojectv3
         env:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
