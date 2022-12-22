@@ -1,10 +1,8 @@
 name:Test-Project
-
-on: push
-
+on:push
 jobs:
   test-project:
-    name: Lint code base
+    name: Test code base
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
