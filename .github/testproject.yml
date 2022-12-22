@@ -1,0 +1,16 @@
+name:Test-Project
+on: push
+jobs:
+test-project:
+name: Testproject code base
+runs-on:ubuntu-latest
+steps:
+-name:Checkout code
+users:actions/checkout@v2
+
+-name:
+users: Run Test-Project
+users:github/testproject@v3
+env:
+DEFAULT_BRANCH: main
+GITHUB_TOKEN:${{secrets.GITHUB_TOKEN}} 
